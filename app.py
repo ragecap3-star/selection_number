@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 import pandas as pd
 import random
 import time
@@ -199,7 +199,7 @@ else:
     # Main Header
     col_h1, col_h2 = st.columns([3, 1])
     with col_h1:
-        st.markdown('<p class="big-title">🎁 숫자 경 품 추 첨 프 로 그 램</p>', unsafe_allow_html=True)
+        st.markdown('<p class="big-title">🎁 경 상 북 도 치 과 의 사 회</p>', unsafe_allow_html=True)
     with col_h2:
         total_p = len(st.session_state.participants)
         rem_p = len(st.session_state.remaining)
