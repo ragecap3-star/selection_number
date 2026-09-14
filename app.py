@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 import pandas as pd
 import random
 import time
@@ -184,8 +184,8 @@ if st.session_state.show_all_modal:
                     st.markdown(f"""
                     <div style="background-color: #1e293b; border: 2px solid #334155; border-radius: 15px; padding: 30px 20px; text-align: center; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
                         <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 8px;">당첨 번호 #{w.get('draw_number', 1)}</p>
-                        <h1 style="color: white; font-size: 5.5rem; margin: 10px auto; text-align: center; width: 100%;">{w['name']}</h1>
-                        <p style="color: #facc15; font-size: 3.5rem; margin-top: 10px; font-weight: bold;">{w['id']}</p>
+                        <h1 style="color: white; font-size: 2.5rem; margin: 10px auto; text-align: center; width: 100%;">{w['name']}</h1>
+                        <p style="color: #facc15; font-size: 2.5rem; margin-top: 10px; font-weight: bold;">{w['id']}</p>
                         <p style="color: #64748b; font-size: 0.85rem; margin-top: 15px;">{w['time']}</p>
                     </div>
                     """, unsafe_allow_html=True)
@@ -199,7 +199,7 @@ else:
     # Main Header
     col_h1, col_h2 = st.columns([3, 1])
     with col_h1:
-        st.markdown('<p class="big-title">🎁 경 상 북 도 치 과 의 사 회</p>', unsafe_allow_html=True)
+        st.markdown('<p class="big-title">🎁 숫자 경 품 추 첨 프 로 그 램</p>', unsafe_allow_html=True)
     with col_h2:
         total_p = len(st.session_state.participants)
         rem_p = len(st.session_state.remaining)
